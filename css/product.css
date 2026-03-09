@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* 전체 레이아웃 설정 */
+.all_wrap {
+  width: 80%; /* 사이트 전체 폭에 맞춰 조절하세요 */
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.all_wrap h1 {
+    font-size: 32px;
+    width: 150px;
+    padding: 0 0 20px;
+    font-weight: bold;
+    margin: 80px auto 130px;
+    text-align: center;
+    border-bottom: 5px solid #004C3F;
+}
+
+.sub_title {
+    text-align: left;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.sub_title span {
+    color: #ff6b00; /* 포인트 컬러 */
+    font-weight: bold;
+}
+
+/* 5개씩 배치하기 위한 Flex 설정 */
+.col {
+    display: flex;
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+    gap: 20px; /* 카드 사이 간격 */
+    margin-bottom: 20px;
+}
+
+.pro_card {
+    /* (100% - (간격 20px * 4개)) / 5개 = 약 18.4% */
+    width: calc((100% - 80px) / 5); 
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    transition: transform 0.3s ease;
+}
+
+/* 카드 내부 디자인 */
+.pro_card a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.pro_card figure {
+    background: #fff;
+/*     border-radius: 12px; */
+    overflow: hidden;
+    /* 아까 추천드린 연한 그림자 적용 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.pro_card figure:hover {
+    transform: translateY(-5px); /* 호버 시 살짝 들림 */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.pro_card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 이미지를 정정사각형으로 유지 */
+    object-fit: cover;
+    display: block;
+}
+
+.pro_card figcaption {
+    padding: 15px;
+    text-align: left;
+}
+
+.pro_card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    height: 2.8em; /* 두 줄 제한 */
+    overflow: hidden;
+    margin-bottom: 8px;
+    word-break: keep-all;
+}
+
+.pro_card p {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.pro_card .price {
+    font-size: 17px;
+    font-weight: bold;
+    color: #222;
+}
+
+.pageNum { margin: 0 auto; text-align: center; font-weight: bold; }
+
+.selNum { color: #ff6b00; }
+
+/* 반응형: 화면이 작아지면 2~3개씩 보이게 설정 */
+@media (max-width: 1024px) {
+    .pro_card { width: calc((100% - 40px) / 3); }
+}
+@media (max-width: 600px) {
+    .pro_card { width: calc((100% - 20px) / 2); }
+}

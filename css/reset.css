@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+:root {
+  --accent-color:#EC4D2C;
+}
+
+/* reset */
+* { margin: 0; padding: 0; }
+body { font: normal 16px/1.5em sans-serif; box-sizing: border-box; }
+ul, li { list-style: none; }
+a { text-decoration: none; color: inherit; }

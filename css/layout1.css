@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* reset */
+    * { margin: 0; padding: 0; }
+    a { text-decoration: none; color: inherit; }
+    body { font-family: "Charcoal", sans-serif; background-color: #eee; }
+    
+    /* main */
+    main { padding: 40px 0; }
+    #title { color: green; text-align: center; font-family: Impact; font-size: 40px; }
+    .subtitle { color: #666; font-size: 20px; margin-bottom: 40px; text-align: center; }
+    article { width: 80%; max-width: 1600px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; }
+    .box { width: 360px; border: 1px solid #ddd; background-color: #fff; margin: 0 auto; box-shadow: 4px 4px 4px #ddd; border-radius: 5px; overflow: hidden; }
+    .box figure { width: 100%;  }
+    .box figure img { width: 100%; vertical-align: top; }
+    .box figure img:hover { opacity: 0.5; }
+    .box figcaption { padding: 20px 10px; overflow: hidden; }
+    .box figcaption p { border-bottom: 1px solid #eee; color: #666; padding-bottom: 5px; margin-bottom: 20px; }
+    .box figcaption div { display: flex; justify-content: space-between; }
+    .btn { font-size: 14px; border-radius: 5px; background: #ba7112; padding: 5px; color: #fff; }

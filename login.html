@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>치즈퀸 | 로그인</title>
+  <link rel="shortcut icon" href="https://cheesequeen.co.kr//data/icon/favicon/faviconFile.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/menu.js"></script>
+
+</head>
+<body>
+  <header class="top_wrap">
+    <ul class="quick">
+      <li><a href="login.html">로그인</a></li>
+      <li><a href="join.html">회원가입</a></li>
+      <li><a href="#">장바구니</a></li>
+      <li><a href="#">마이페이지</a></li>
+      <li><a href="#">고객센터</a></li>
+    </ul><!-- quick -->
+    <div class="top_main">
+      <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="ChesseQueen"></a></h1>
+    
+    <div class="search_wrap">
+      <input type="search" placeholder="상품명을 입력해주세요" class="search_input">
+      <p>평일 오후 5시 이전 주문 당일 출고, <span class="orange">금요일에도 토요일 도착</span></p>
+    </div><!-- search_wrap -->
+    
+    <a href="#" class="freeclup"><img src="img/top_banner.jpg" alt="무료배송클럽 바로가기"></a>
+    </div>
+    
+
+    <nav id="gnb">
+      <ul>
+        <li><a href="#">기간임박할인</a></li>
+        <li><a href="#">치즈</a>
+          <ul class="submenu">
+          <li><a href="product_mo.html">모짜렐라</a></li>
+          <li><a href="#">크림치즈/카이막</a></li>
+          <li><a href="#">브리/까망베르</a></li>
+          <li><a href="#">자연치즈</a></li>
+          <li><a href="#">가공치즈</a></li>
+          </ul>
+        </li>
+        <li><a href="#">유제품/음료</a>
+          <ul class="submenu">
+            <li><a href="#">요거트</a></li>
+            <li><a href="#">시리얼</a></li>
+            <li><a href="#">버터</a></li>
+            <li><a href="#">크림</a></li>
+            <li><a href="#">음료</a></li>
+          </ul>
+        </li>
+        <li><a href="#">스낵/간식</a>
+          <ul class="submenu">
+            <li><a href="#">브래드스틱</a></li>
+            <li><a href="#">크래커/칩</a></li>
+            <li><a href="#">쿠키/칩</a></li>
+            <li><a href="#">쿠키/스낵</a></li>
+            <li><a href="#">초콜릿/캔디/젤리</a></li>
+          </ul>
+        </li>
+        <li><a href="#">햄/생햄</a>
+          <ul class="submenu">
+            <li><a href="#">하몽/잠봉</a></li>
+            <li><a href="#">살지촌/초리초/살라미</a></li>
+          </ul>
+        </li>
+        <li><a href="#">소스/오일</a>
+          <ul class="submenu">
+            <li><a href="#">오일</a></li>
+            <li><a href="#">발사믹/비네거</a></li>
+            <li><a href="#">조미료/향신료</a></li>
+            <li><a href="#">믹스 파우더</a></li>
+            <li><a href="#">소스</a></li>
+          </ul>
+        </li>
+        <li><a href="#">면/샌드위치</a>
+          <ul class="submenu">
+            <li><a href="#">파스타면</a></li>
+            <li><a href="#">누들</a></li>
+            <li><a href="#">샌드위치 재료</a></li>
+          </ul>
+        </li>
+        <li><a href="#">올리브/절임/견과/통조림</a>
+          <ul class="submenu long">
+            <li><a href="#">견과/통조림</a></li>
+            <li><a href="#">올리브/절임</a></li>
+          </ul>
+        </li>
+        <li><a href="#">잼/시럽</a></li>
+        <li><a href="#">치즈도구</a></li>
+        <li><a href="#">선물세트</a></li>
+        <li class="icon"><a href="#"><img src="img/icon/person.png" alt="my page"></a></li>
+        <li class="icon"><a href="#"><img src="img/icon/bag.png" alt="장바구니"></a></li>
+      </ul>
+    </nav><!-- gnb -->
+  </header><!--top_wrap  -->
+
+  <div id="wrapper">
+    <h2 class="login_title">로그인</h2>
+    <form class="login_wrap">
+      <label for="u_id" class="hide">아이디</label>
+      <input type="text" id="u_id" placeholder="아이디"  required autofocus>
+      <label for="u_pwd" class="hide">비밀번호</label>
+      <input type="password" id="u_pwd" placeholder="비밀번호" required>
+      <div class="under">
+        <div class="check">
+        <input type="checkbox" id="save">
+        <label for="save" class="save_txt">아이디 저장</label>
+      </div>
+      <ul class="find">
+        <li><a href="#">아이디 찾기</a></li>
+        <li><a href="#">비밀번호 찾기</a></li>
+      </ul>
+      </div>
+      
+      <button class="btn_login" id="loginBtn">로그인</button>
+    </form><!-- login_wrap -->
+
+    <section class="sns_login">
+      <ul>
+        <li class="kakao"><a href="#">카카오 로그인</a></li>
+        <li class="naver"><a href="#">네이버 로그인</a></li>
+      </ul>
+    </section>
+
+    <section class="join">
+      <div class="join_img"><img src="img/login/join.webp" alt="치즈퀸의 맴버가 되시면 쿠폰, 포인트, 이벤트 초대 등 다양한 혜택을 받으실 수 있습니다. 지금 치즈퀸의 맴버가 되세요!"></div>
+      <ul>
+        <li><a href="singup.html" class="mem_btn common">일반회원 가입</a></li>
+        <li><a href="singup.html" class="mem_btn business">비지니스 회원가입</a></li>
+      </ul>
+    </section>
+  </div><!-- wrapper -->
+
+  <footer>
+    <div class="service">
+      <p>공지사항 | NOTICE</p>
+      <p>자주 묻는 질문 |FAQ</p>
+    </div>
+    <div class="bottom">
+      <div class="left">
+        <h5><img src="img/logo.png" alt="CheeseQueen"></h5>
+        <p>계좌안내<br><span>836301-04<br>-123192</span><br>국민은행 | 예금주 :<br>씨큐컴퍼니</p>
+      </div>
+      <div class="center">
+      <p>치즈퀸 사업자 정보</p>
+      <ul>
+        <li>HOSTED BY <a href="#">가비아 퍼스트몰</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보 취급방침</a></li>
+      </ul>
+      <p class="copy">COPYRIGHT &copy; 2015. CHEESEQUEEN.CO.KR. ALL RIGHTS RESERVED.</p>
+      </div><!-- center -->
+      <div class="right">
+        <p>고객센터 <span>1577-0098</span></p>
+        <p>평일 07:00 ~ 18:00 / 토,일요일 09:00 ~ 18:00<br>점심시간 12:00 ~ 13:00</p>
+        <p>고객센터바로가기</p>
+      </div><!-- right -->
+    </div>
+  </footer>
+</body>
+</html>

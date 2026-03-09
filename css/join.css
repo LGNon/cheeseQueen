@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#wrapper { width: 30%; min-width: 400px; margin: 60px auto; text-align: center; }
+
+.title { font-size: 32px; margin-bottom: 50px; }
+.hide { display: none; }
+#u_id, #u_pwd, #c_pwd { display: block; width: 100%; line-height: 3.5em; text-indent: 1.5em; border: 1px solid #999; border-radius: 5px; }
+.txt { text-align: left; display: block; margin: 5px 0 15px; text-indent: 1em; color: #999; font-size: 14px; }
+
+.chk_input { text-align: left; color: #555; }
+
+.checklist { text-align: left; margin: 50px 0; }
+.all_ch_wrapper li ul { margin-top: 10px; }
+.all_ch_wrapper li ul li { text-indent: 1em; margin-bottom: 5px; }
+
+.btn_login { width: 100%; line-height: 50px; font-size: 20px; background-color: #EC4D2C; border: none; color: #fff; border-radius: 5px; font-weight: bold; transition: all 0.3s; }
+.btn_login:hover { background-color: #be2d10; cursor: pointer; }

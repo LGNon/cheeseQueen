@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* reset */
+    * { margin: 0; padding: 0; }
+    a { text-decoration: none; color: inherit; }
+    body { font-family: "Charcoal", sans-serif; background-color: #eee; }
+
+    main { padding: 40px 0;}
+    #title { color: #111; font-size: 25px; margin: 25px 15%; }
+    article { width: 80%; max-width: 1600px; margin: 0 auto; justify-content: center; display: flex; flex-wrap: wrap; gap: 20px; }
+    .box figure { width: 100px;  }
+    .box figure img { width: 100%; vertical-align: top; border-radius: 500px; }
+    .box figure img:hover { opacity: 0.5; }
+    .box figcaption {  font-size: 16px; padding: 20px 10px; overflow: hidden; text-align: center;  }

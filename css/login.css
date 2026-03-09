@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#wrapper { width: 30%; min-width: 400px; margin: 60px auto; text-align: center; }
+
+.login_title { font-size: 32px; margin-bottom: 50px; }
+.hide { display: none; }
+#u_id, #u_pwd { display: block; width: 100%; line-height: 3.5em; text-indent: 1.5em; margin-bottom: 10px; border: 1px solid #999; border-radius: 5px; }
+
+
+.under { display: flex; justify-content: space-between; }
+
+.check { text-align: left; width: 50%; }
+
+
+.find { display: flex; gap: 20px; }
+.find li a:hover { text-decoration: underline; }
+
+#loginBtn { margin: 50px 0 20px; border: none; background-color: #004C3F; color: #fff; width: 300px; line-height: 50px; font-size: 18px; border-radius: 10px; font-weight: bold; }
+#loginBtn:hover { background-color: #80d3c4; color: #000; cursor: pointer; }
+
+.sns_login ul { margin: 0 0 30px; display: flex; justify-content: center; gap: 10px; }
+.sns_login ul li { border: 1px solid #999; color: #333; width: 200px; border-radius: 5px;overflow: hidden; }
+.sns_login ul li a { display: inline-block; line-height: 60px; width: 200px;text-indent: 3.5em; }
+.sns_login ul li.kakao { background: url('../img/login/kakao.png') no-repeat 20px center; }
+.sns_login ul li.naver { background: url('../img/login/naver.png') no-repeat 20px center; }
+.sns_login ul li  a:hover { font-weight: bold; }
+
+.join { margin: 100px 0; }
+.join_img { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 10px 0; margin-bottom: 50px; }
+.join ul .mem_btn { border: 2px solid #000; width: 200px; display: block; margin: 10px auto; height: 50px; line-height: 50px; font-weight: bold; border-radius: 5px; }
+.join ul .common { color: #004C3F; border-color: #004C3F; }
+.join ul .common:hover { background-color: #004C3F; color: #fff; cursor: pointer; }
+.join ul .business { color: #EC4D2C; border-color: #EC4D2C; }.join ul .business:hover { background-color: #ec4d2c; color: #fff; cursor: pointer; }

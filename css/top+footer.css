@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+:root {
+  --accent-color:#EC4D2C;
+}
+
+.top_wrap { padding: 20px 10%; margin: 0 auto; }
+
+.quick { display: flex; justify-content: end; gap: 20px; }
+.quick a:hover { text-decoration: underline; }
+
+.top_main { width: 100%; display: flex; justify-content: space-between; align-items: center; flex: 1; margin: 25px 0; }
+.top_main .logo { width: 30%; }
+.top_main .logo img { width: 100%; }
+
+.search_wrap { width: 40%; text-align: center;margin-top: 30px; }
+.search_wrap .search_input { border: none; width: 100%; line-height: 3em; border-radius: 100px; text-indent: 2em; background: #f0f0f0 url("../img/icon/search.png") no-repeat 95%; }
+.search_wrap span { color: var(--accent-color); font-weight: bold; }
+.freeclup img { vertical-align: top; }
+
+#gnb { width: 100%; }
+
+#gnb ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+#gnb ul li {  min-width: 120px; line-height: 40px;position:relative; }
+#gnb ul li a { display: block; text-align: center;/*  border: 1px solid #000;  */}
+#gnb .submenu {
+  width: 100%;
+  height: 200px;
+  font-size: 12px;
+  position: absolute; 
+  background-color: #fff;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+#gnb .submenu li {
+  width: 100%;
+}
+#gnb .submenu li:hover a { background-color: #EC4D2C; color: #fff; }
+
+#gnb .icon { min-width: 24px; height: 24px; margin: 5px 0; }
+#gnb .icon img { vertical-align: top; }
+
+/* ====== FOOTER ====== */
+
+footer .service { width: 100%; height: 50px; background-color:#f0e7e4; color: #004c3f; font-weight: bold; }
+footer .service p { display: inline; padding-left: 30px;  line-height: 50px; font-size: 20px; }
+footer .service p:first-child { padding-left: 210px; }
+
+footer .bottom { margin: 50px 10%; display: flex; justify-content: space-between; align-items: center; }
+
+footer .left { display: flex; gap: 50px; align-items: center; }
+footer .left h5 { width: 200px; }
+footer .left h5 img { width: 100%; }
+footer .left p span { color: #ec4d2c; font-weight: bold; font-size: 20px; }
+
+footer .center { text-align: center; color: #666; }
+footer .center ul { display: flex; justify-content: center; gap: 10px; }
+footer .center ul li a { text-decoration: underline; }
+
+footer .right p:first-child { font-weight: bold; font-size: 20px; }
+footer .right p:first-child span { color:#469746; }
+footer .right p:nth-child(2) { margin: 10px 0; color: #666; }
