@@ -94,7 +94,7 @@ $(function(){
                   `
                     <a href="#">
                       <figure>
-                        <img src="./img/Best/${i.url}">
+                        <img src="./img/best/${i.url}">
                         <figcaption>
                           <h3>${i.title}</h3>
                           <p>${i.subtitle}</p>
